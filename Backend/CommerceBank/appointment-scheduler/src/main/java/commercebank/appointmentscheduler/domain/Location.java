@@ -5,14 +5,15 @@ import javax.persistence.*;
 
 @AllArgsConstructor
 @NoArgsConstructor
-
 @Entity
-@Table(name="location")
+
 public class Location{
+
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
-    private String STREET_ADDRESS;
+
+    private String street_address;
     private String city;
     private String state;
     private Integer zipCode;
