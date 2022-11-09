@@ -17,10 +17,8 @@ public class PotentialClientController {
     //fetch , axios
     //fetch("http://localhost:8080/customer", {method:POST})
     //GetMapping  //
-    //PostMaaping // /appointment
+    //PostMapping // /appointment
     // GetMapping            // customers/{1}/appointments/{2}
-
-
 
     private final PotentialClientService potentialClientService;
 
