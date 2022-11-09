@@ -22,7 +22,7 @@ public class PotentialClient {
     private String first_name;
     private String email;
 
-    @OneToMany(mappedBy = "potentialClient")
-    private List<Appointment> appointments = new ArrayList<>();
+    //@OneToMany(mappedBy = "potentialClient")
+    //private List<Appointment> appointments = new ArrayList<>();
 
 }

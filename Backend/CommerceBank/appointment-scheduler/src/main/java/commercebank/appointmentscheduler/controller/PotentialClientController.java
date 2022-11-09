@@ -17,7 +17,7 @@ public class PotentialClientController {
     //fetch , axios
     //fetch("http://localhost:8080/customer", {method:POST})
     //GetMapping  //
-    //PostMapping // /appointment
+    //PostMaaping // /appointment
     // GetMapping            // customers/{1}/appointments/{2}
 
     private final PotentialClientService potentialClientService;
@@ -28,7 +28,6 @@ public class PotentialClientController {
         System.out.println("firstname " + potentialClient.getFirst_name());
 
         return new ResponseEntity<>(potentialClientService.create(potentialClient), HttpStatus.CREATED);
-
 
     }
 

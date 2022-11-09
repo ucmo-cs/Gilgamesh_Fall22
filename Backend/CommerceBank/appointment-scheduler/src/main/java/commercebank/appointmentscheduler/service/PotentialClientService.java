@@ -14,10 +14,7 @@ public class PotentialClientService {
       private final PotentialClientRepository potentialClientRepository;
 
 
-      public PotentialClient create(PotentialClient potentialClient){
-
-            return potentialClientRepository.save(potentialClient);
-
-      }
+      public PotentialClient create(PotentialClient potentialClient) { return potentialClientRepository.save(potentialClient); }
+      //public PotentialClient delete(PotentialClient potentialClient) { return potentialClientRepository.delete(potentialClient);}
 
 }
