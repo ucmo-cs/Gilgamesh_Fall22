@@ -15,8 +15,8 @@ public class AppointmentService {
     @Transactional
     public Appointment create(Appointment appointment) {
 
-        //get user name from appointment
-        //check whether the user name is already in
+        // get username from appointment
+        // check whether the username is already in
 
         return appointmentRepository.save(appointment);
 
