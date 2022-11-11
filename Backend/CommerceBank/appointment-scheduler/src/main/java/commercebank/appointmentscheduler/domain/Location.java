@@ -1,6 +1,6 @@
 package commercebank.appointmentscheduler.domain;
-import lombok.*;
 
+import lombok.*;
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +13,7 @@ public class Location{
 
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    @Column(name= "location_id")
+    //@Column(name= "location_id")
     private Long id;
 
     private String street_address;
@@ -23,4 +23,5 @@ public class Location{
 
     @OneToMany(mappedBy = "location")
     private List<Appointment> appointments = new ArrayList<>();
+
 }

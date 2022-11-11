@@ -1,6 +1,5 @@
 package commercebank.appointmentscheduler.controller;
 
-
 import commercebank.appointmentscheduler.domain.PotentialClient;
 import commercebank.appointmentscheduler.service.PotentialClientService;
 import lombok.RequiredArgsConstructor;

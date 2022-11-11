@@ -1,9 +1,7 @@
 package commercebank.appointmentscheduler.controller;
 
 import commercebank.appointmentscheduler.domain.Appointment;
-import commercebank.appointmentscheduler.domain.PotentialClient;
 import commercebank.appointmentscheduler.service.AppointmentService;
-import commercebank.appointmentscheduler.service.PotentialClientService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
@@ -18,7 +16,6 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 public class AppointmentController {
 
-
     private final AppointmentService appointmentService;
 
     @PostMapping("/appointment")
@@ -32,6 +29,5 @@ public class AppointmentController {
         return new ResponseEntity<>(appointmentService.create(appointment), HttpStatus.CREATED);
 
     }
-
 
 }

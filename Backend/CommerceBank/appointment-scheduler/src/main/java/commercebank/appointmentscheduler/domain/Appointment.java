@@ -14,6 +14,7 @@ import java.util.Date;
 @Entity
 @Data
 public class Appointment {
+
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Long id;
@@ -26,14 +27,13 @@ public class Appointment {
     private String email;
     private String time;
 
-    @JoinColumn(name = "location_id")
+    //@JoinColumn(name = "location_id")
     @ManyToOne(cascade=CascadeType.ALL)
     private Location location;
-
-
 
     //private Integer location_id;
     //private Integer employee_id;
     //private Integer potential_client_id;
     //private String reason;
+
 }
