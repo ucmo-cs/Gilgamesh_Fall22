@@ -1,6 +1,5 @@
 package commercebank.appointmentscheduler.controller;
 
-
 import commercebank.appointmentscheduler.domain.PotentialClient;
 import commercebank.appointmentscheduler.service.PotentialClientService;
 import lombok.RequiredArgsConstructor;
@@ -20,8 +19,6 @@ public class PotentialClientController {
     //PostMaaping // /appointment
     // GetMapping            // customers/{1}/appointments/{2}
 
-
-
     private final PotentialClientService potentialClientService;
 
     @PostMapping("/customer")
@@ -30,7 +27,6 @@ public class PotentialClientController {
         System.out.println("firstname " + potentialClient.getFirst_name());
 
         return new ResponseEntity<>(potentialClientService.create(potentialClient), HttpStatus.CREATED);
-
 
     }
 

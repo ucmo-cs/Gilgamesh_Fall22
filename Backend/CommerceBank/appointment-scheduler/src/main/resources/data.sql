@@ -1,6 +1,6 @@
-INSERT INTO location (street_address, city, state, zip_code)
-    values ('123 Main St.', 'Kansas City', 'Missouri', 12345);
-INSERT INTO location (street_address, city, state, zip_code)
-    values ('456 North st.', 'Kansas City', 'Missouri', 98765);
-INSERT INTO employee(last_name, first_name, email, location_id)
-    values ('smith', 'john', 'john.smith@email.com', 2)
+--INSERT INTO location (location_id, city, state, street_address, zip_code)
+--    values (2, 'Kansas City', 'Missouri', '123 Main St.', 12345);
+--INSERT INTO location (location_id, city, state, street_address, zip_code)
+--    values (2, 'Kansas City', 'Missouri', '456 North St.', 98765);
+--INSERT INTO employee(email, first_name, last_name, location_id)
+--    values ('john.smith@email.com', 'John', 'Smith', 2)

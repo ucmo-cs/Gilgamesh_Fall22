@@ -1,0 +1,59 @@
+#confirm{
+  width: 861px;
+  height: 21px;
+  background-color: rgba(255, 255, 255, 0);
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+  font-size: 100%;
+  color: black;
+  text-align: left;
+  line-height: normal;
+
+}
+#logo {
+  width: 432px;
+  height: 77px;
+  box-sizing: border-box;
+}
+#rectangle {
+  width: 1519px;
+  height: 145px;
+  padding: 2px 2px 2px 2px;
+  background-color: #006747;
+  box-sizing: border-box;
+}
+#we-scheduled-your-ap {
+  width: 803px;
+  height: 42px;
+  background-color: rgba(255, 255, 255, 0);
+  box-sizing: border-box;
+  font-family: "Arial Bold", "Arial", sans-serif;
+  font-weight: 700;
+  color: #006747;
+  text-align: left;
+  line-height: normal;
+}
+#footer {
+width: 1519px;
+  height: 385px;
+  box-sizing: border-box;
+}
+#header{
+	width: 1519px;
+  height: 100px;
+  box-sizing: border-box;
+}
+#return-home {
+  width: 172px;
+  height: 46px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+  border: 1px solid #797979;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  font-family: "Arial Bold", "Arial", sans-serif;
+  font-weight: 700;
+  color: #333333;
+  text-align: center;
+  line-height: normal;
+}
