@@ -1,0 +1,40 @@
+
+h1 {
+  background-color: rgba(255, 255, 255, 0);
+  box-sizing: border-box;
+  font-family: "Arial Bold", "Arial", sans-serif;
+  font-weight: 700;
+  color: #006747;
+  text-align: center;
+  font-size: 40px;
+  padding-top: 200px;
+
+}
+
+h2 {
+  background-color: rgba(255, 255, 255, 0);
+  box-sizing: border-box;
+  font-family: "Arial Bold", "Arial", sans-serif;
+  font-weight: 700;
+  color: #006747;
+  text-align: center;
+  font-size: 40px;
+  
+}
+ 
+ 
+ #appointment {
+	 color: #2e2e2e;
+	 text-align: center;
+	 
+}
+
+#link {
+	padding-bottom: 150px;
+}
+
+body {
+ background-image: url("u1.jpg");
+ padding-right: 1000px;
+ text-align: center;
+}
