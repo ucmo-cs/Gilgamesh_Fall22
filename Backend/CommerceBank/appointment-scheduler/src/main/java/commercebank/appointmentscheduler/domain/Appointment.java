@@ -27,7 +27,7 @@ public class Appointment {
     private String email;
     private String time;
 
-    //@JoinColumn(name = "location_id")
+    @JoinColumn(name = "location_id")
     @ManyToOne(cascade=CascadeType.ALL)
     private Location location;
 
