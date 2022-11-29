@@ -1,12 +1,14 @@
 package commercebank.appointmentscheduler.domain;
 
 import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.NoArgsConstructor;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 
+import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
+
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
@@ -14,6 +16,7 @@ public class Employee {
 
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
+    //@Column(name = "employee_id")
     private Long id;
 
     private String last_name;
@@ -21,4 +24,7 @@ public class Employee {
     private String email;
     private Integer location_id;
 
+    @ManyToOne
+    @JoinColumn(name = "location_id")
+    private Location location;
 }

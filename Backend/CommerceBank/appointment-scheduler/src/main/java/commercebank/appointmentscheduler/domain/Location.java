@@ -13,7 +13,7 @@ public class Location{
 
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    //@Column(name= "location_id")
+    @Column(name= "location_id")
     private Long id;
 
     private String street_address;
@@ -24,4 +24,9 @@ public class Location{
     @OneToMany(mappedBy = "location")
     private List<Appointment> appointments = new ArrayList<>();
 
+
+    //Employee info
+    @JoinColumn(name = "employee_id")
+    @OneToMany
+    private List<Employee> employee;
 }

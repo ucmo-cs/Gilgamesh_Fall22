@@ -17,23 +17,28 @@ public class Appointment {
 
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
+    //appointment info
     private Long id;
+    private String date;
+    private String time;
+    private String reason;
 
     //@JoinColumn(name = "customer_id")
     //@ManyToOne
-    //private PotentialClient potentialClient;
 
-    private String name;
+    //Client Info;
+    private String firstName;
+    private String lastName;
     private String email;
-    private String time;
+    private String phoneNumber;
 
+
+    //Location Info
     @JoinColumn(name = "location_id")
     @ManyToOne(cascade=CascadeType.ALL)
     private Location location;
 
-    //private Integer location_id;
-    //private Integer employee_id;
-    //private Integer potential_client_id;
-    //private String reason;
+
+
 
 }
