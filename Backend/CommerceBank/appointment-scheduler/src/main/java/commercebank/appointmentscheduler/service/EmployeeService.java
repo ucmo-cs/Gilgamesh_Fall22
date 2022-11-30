@@ -9,7 +9,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
 import javax.transaction.Transactional;
-import java.beans.Transient;
 import java.util.List;
 import java.util.Optional;
 
@@ -19,35 +18,35 @@ public class EmployeeService {
 
     private final EmployeeRepository employeeRepository;
 
-    public Employee getById(long id){
+//    public ResponseStatusException getById(long id){
+//
+//        if(id > 0) {
+//            Optional<Employee> employee = employeeRepository.findById(id);
+//            if (employee.isPresent()) {
+//                return employee.get();
+//            }
+//            else{
+//                return new ResponseStatusException(HttpStatus.NOT_FOUND, "No employee with id " + id);
+//            }
+//        }
+//        else
+//            return null;
+//        }
 
-        if(id > 0) {
-            Optional<Employee> employee = employeeRepository.findById(id);
-            if (employee.isPresent()) {
-                return employee.get();
-            }
-            else{
-                return new ResponseStatusException(HttpStatus.NOT_FOUND, "No employee with id " + id)
-            }
-        }
-        else
-            return null;
-        }
+//    public List<Employee> getAll(){
+//        List<Employee> employees = employeeRepository.findAll();
+//        return employees;
+//    }
 
-    public List<Employee> getAll(){
-        List<Employee> employees = employeeRepository.findAll();
-        return employees;
-    }
+//    @Transactional
+//    public Employee create(Employee employee){
+//        return employeeRepository.save(employee);
+//    }
 
-    @Transactional
-    public Employee create(Employee employee){
-        return employeeRepository.save(employee);
-    }
-
-    public Employee update(long employeeId, Employee employee){
-        employee.setId(employeeId);
-        return EmployeeRepository.save(employee);
-    }
+//    public static Employee update(long employeeId, Employee employee){
+//        employee.setId(employeeId);
+//        return EmployeeRepository.save(employee);
+//    }
 
     public void delete(long id){
         employeeRepository.deleteById(id);

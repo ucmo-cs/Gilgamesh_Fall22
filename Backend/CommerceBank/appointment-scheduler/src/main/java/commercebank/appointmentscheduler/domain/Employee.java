@@ -24,7 +24,6 @@ public class Employee {
     private String email;
     private Integer location_id;
 
-    @ManyToOne
-    @JoinColumn(name = "location_id")
-    private Location location;
+    //@JoinColumn(name = "location_id")
+//    private Location location;
 }
